@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.fangfang.shop.model.CartGoods">
+	<insert id="add" parameterType="CartGoods">
+	insert into t_cart_goods (number,price,o_id,p_id) value (#{number},#{price},#{orders.id},#{goods.id});
+	</insert>
+	
+	<delete id="deleteByOrders" parameterType="map">
+		delete from t_cart_product where o_id=#{oid}
+	</delete>
+</mapper>

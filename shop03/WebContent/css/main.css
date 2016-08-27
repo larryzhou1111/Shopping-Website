@@ -1,0 +1,13 @@
+table.thin-border {
+	border-bottom:1px solid #00f;
+	border-right:1px solid #00f;
+}
+table.thin-border td {
+	border-top:1px solid #00f;
+	border-left:1px solid #00f;
+	padding:5px;
+}
+span.errorContainer {
+	color:#f00;
+	font-weight:bold;
+}
